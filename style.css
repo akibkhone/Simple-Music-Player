@@ -90,6 +90,13 @@ body {
 #all-songs {
 	height: 85%;
 	margin-top: 30px;
+	overflow-y: scroll;
+	scrollbar-width: none; /* Hide scrollbar in Firefox */
+	-ms-overflow-style: none; /* Hide scrollbar in Internet Explorer */
+}
+
+#all-songs::-webkit-scrollbar {
+	display: none; /* Hide scrollbar in WebKit browsers */
 }
 
 /* Song card */
@@ -98,7 +105,7 @@ body {
 	align-items: center;
 	justify-content: space-between;
 	border-top: 1px solid #5a5a5a;
-	padding: 18px 15px;
+	padding: 15px 15px;
 }
 
 .song-card:nth-last-child(1) {
@@ -117,11 +124,11 @@ body {
 }
 
 .song-card h2 {
-	font-size: 22px;
+	font-size: 20px;
 }
 
 .song-card h6 {
-	font-size: 16px;
+	font-size: 14px;
 }
 
 .song {
@@ -143,7 +150,7 @@ body {
 
 #player h3 {
 	background-color: rgb(108, 104, 104);
-	padding: 20px;
+	padding: 15px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
